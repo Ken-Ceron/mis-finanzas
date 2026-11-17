@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis finanzas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="encabezado">
+        <h1>Mis Finanzas Personales</h1>
+
+        <div class="ingreso">
+        <label for="ingreso">Ingreso Quincenal</label>
+        <input type="number" id="ingreso" value="1500">
+        </div>
+    </div>
+ <div class="contenedor-tablas">
+<section class="gastos-mensuales">
+    <h2>Gastos Mensuales</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Concepto</th>
+                <th>Monto</th>
+            </tr>
+        </thead>
+
+        <tbody id="lista-gastos">
+           
+        </tbody>
+
+<tfoot>
+    <tr>
+        <th scope="row">TOTAL</th>
+        <td id="total-mensual">$0.00</td>
+    </tr>
+</tfoot>
+
+    </table>
+
+    <button type="button" id="agregar-mensual" class="agregar-gasto">
+        + Agregar gasto
+    </button>
+</section>
+<section class="gastos-quincenales">
+    <h2>Gastos quincenales</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Concepto</th>
+                <th>Monto</th>
+            </tr>
+        </thead>
+        <tbody id="lista-quincenales">
+<tr>
+    <th>Dinero Mama</th>
+    <th>
+        <input type="number" id="dinero-mama" placeholder="0.00">
+    </th>
+</tr>
+<tr>
+    <th>Dinero papa</th>
+    <th>
+        <input type="number" id="dinero-papa" placeholder="0.00">
+    </th>
+</tr>
+        </tbody>
+         <tfoot>
+        <tr>
+            <th scope="row">Total</th>
+            <td id="total-quincenal">$0.00</td>
+        </tr>
+    </tfoot>
+    </table>
+    <button type="button" id="agregar-quincenal" class="agregar-gasto">
+        + Agregar gasto
+    </button>
+</section>
+ </div>
+<section class="resumen-financiero">
+    <h2> Resumen Financiero</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <th scope="row">Ingreso Quincenal</th>
+                    <td id="resumen-ingreso">$0.00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Gastos Mensuales</th>
+                    <td id="resumen-mensuales">$0.00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Gastos Quincenales</th>
+                    <td id="resumen-quincenales">$0.00</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th scope="row">Dinero restante</th>
+                    <td id="resumen-disponible">$0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+</section>
+
+<section class="distribucion-cuentas">
+    <h2>Distribución por Cuentas</h2>
+
+    <div class="contenedor-cuentas">
+
+        <div class="cuenta">
+            <h3>Cuenta Principal</h3>
+            <p id="cuenta-principal">$0.00</p>
+        </div>
+
+        <div class="cuenta">
+            <h3>Cuenta Secundaria</h3>
+            <p id="cuenta-secundaria">$0.00</p>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
