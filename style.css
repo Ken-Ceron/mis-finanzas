@@ -185,3 +185,49 @@ tfoot {
 .cuenta:last-child p {
     color: #fdfdfdff;
 }
+
+.gasto-dinamico input,
+#dinero-mama,
+#dinero-papa {
+    border: none;
+    background: transparent;
+    font-weight: 700;
+    font-size: inherit;
+    color: #253149;
+    padding: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+/* Cuando pasas el mouse */
+.gasto-dinamico input:hover,
+#dinero-mama:hover,
+#dinero-papa:hover {
+    background-color: #e8f0fe;
+    cursor: text;
+}
+
+/* Cuando haces clic para editar */
+.gasto-dinamico input:focus,
+#dinero-mama:focus,
+#dinero-papa:focus {
+    background-color: #e8f0fe;
+    outline: 2px solid #2563eb;
+}
+
+@media (max-width: 600px) {
+    .contenedor-tablas {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .gastos-mensuales,
+    .gastos-quincenales {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+}
